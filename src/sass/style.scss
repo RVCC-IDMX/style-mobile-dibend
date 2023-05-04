@@ -77,6 +77,8 @@ select {
   }
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
+
 body {
   line-height: 1.5;
   padding-bottom: 2rem;
@@ -85,13 +87,14 @@ body {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  font-family: 'Inconsolata', monospace;
 }
 
 body > * {
   max-width: min(90%, 50rem);
   margin: 0 auto;
   backdrop-filter: blur(1rem);
-  background:hsl(100, 100, 100, 0.5);
+  background: hsl(100, 100, 100, 0.5);
   padding: 2rem;
   margin: 2rem auto;
   border-radius: 2rem;
@@ -113,7 +116,7 @@ nav > ul {
 }
 
 nav > ul > li {
-  background-color: hsl(0, 0, 0, .5);
+  background-color: hsl(0%, 0%, 0%, .5);
   padding: 1rem;
   border-radius: .5rem;
 }
@@ -131,4 +134,12 @@ nav > ul > li > a {
 
 a {
   text-underline-position: under;
+}
+
+.skip-link {
+  opacity: 0;
+}
+
+.skip-link:focus {
+  opacity: 1;
 }

@@ -1,5 +1,6 @@
 /* main */
 /* Box sizing rules */
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap");
 *,
 *::before,
 *::after {
@@ -80,6 +81,7 @@ body {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  font-family: "Inconsolata", monospace;
 }
 
 body > * {
@@ -125,4 +127,12 @@ nav > ul > li > a {
 }
 a {
   text-underline-position: under;
+}
+
+.skip-link {
+  opacity: 0;
+}
+
+.skip-link:focus {
+  opacity: 1;
 }
