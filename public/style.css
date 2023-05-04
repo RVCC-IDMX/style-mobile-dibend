@@ -1,7 +1,4 @@
 /* main */
-
-// https://piccalil.li/blog/a-modern-css-reset
-
 /* Box sizing rules */
 *,
 *::before,
@@ -24,8 +21,8 @@ dd {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
+ul[role=list],
+ol[role=list] {
   list-style: none;
 }
 
@@ -64,9 +61,8 @@ select {
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
-   scroll-behavior: auto;
+    scroll-behavior: auto;
   }
-  
   *,
   *::before,
   *::after {
@@ -76,7 +72,6 @@ select {
     scroll-behavior: auto !important;
   }
 }
-
 body {
   line-height: 1.5;
   padding-bottom: 2rem;
@@ -91,7 +86,7 @@ body > * {
   max-width: min(90%, 50rem);
   margin: 0 auto;
   backdrop-filter: blur(1rem);
-  background:hsl(100, 100, 100, 0.5);
+  background: hsla(100deg, 100%, 100%, 0.5);
   padding: 2rem;
   margin: 2rem auto;
   border-radius: 2rem;
@@ -113,9 +108,9 @@ nav > ul {
 }
 
 nav > ul > li {
-  background-color: hsl(0, 0, 0, .5);
+  background-color: hsla(0deg, 0%, 0%, 0.5);
   padding: 1rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 nav > ul > li > a {
@@ -128,7 +123,6 @@ nav > ul > li > a {
     gap: 1rem;
   }
 }
-
 a {
   text-underline-position: under;
 }
